@@ -1,6 +1,7 @@
 package lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.controller;
 
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dto.CustomerDTO;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.exception.NotFoundException;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
