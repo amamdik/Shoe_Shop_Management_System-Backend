@@ -1,11 +1,14 @@
 package lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.impl;
 
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dao.InventoryDAO;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dao.SizeDAO;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dao.SupplierDAO;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dto.InventoryDTO;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.entity.InventoryEntity;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.entity.SupplierEntity;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.entity.SupplierInventoryDetailEntity;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.exception.NotFoundException;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.mapping.Mapping;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.InventoryService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

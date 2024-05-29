@@ -5,6 +5,8 @@ import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dao.SupplierDAO;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dto.SupplierDTO;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.entity.SupplierEntity;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.exception.NotFoundException;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.mapping.Mapping;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.SupplierService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +16,7 @@ import java.util.Optional;
 @Service
 @Transactional
 @AllArgsConstructor
-public class SupplierServiceImpl {
+public class SupplierServiceImpl implements SupplierService {
     private SupplierDAO supplierDAO;
     private final Mapping conversionData;
 
