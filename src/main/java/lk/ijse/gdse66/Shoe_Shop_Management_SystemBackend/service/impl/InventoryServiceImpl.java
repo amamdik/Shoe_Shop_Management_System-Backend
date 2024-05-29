@@ -10,6 +10,7 @@ import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.entity.SupplierInventor
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.exception.NotFoundException;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.mapping.Mapping;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.InventoryService;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.SupplierInventoryDetailsService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
