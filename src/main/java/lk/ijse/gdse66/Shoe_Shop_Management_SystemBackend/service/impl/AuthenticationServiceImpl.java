@@ -27,7 +27,7 @@ import java.util.UUID;
 public class AuthenticationServiceImpl implements AuthenticationService {
 
     private final PasswordEncoder passwordEncoder;
-    private final UserDAO userDAO;
+    private  final UserDAO userDAO;
     private final Mapping mapping;
     private final JWTService jwtService;
     private final AuthenticationManager authenticationManager;
@@ -65,7 +65,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         return JwtAuthResponse.builder().token(generateToken).build();
     }
 
-    //only one time
+
+    //Only One time
     @Override
     public JwtAuthResponse signUp() {
         Long rowCount = (Long) entityManager.createNativeQuery("SELECT COUNT(*) FROM user").getSingleResult();

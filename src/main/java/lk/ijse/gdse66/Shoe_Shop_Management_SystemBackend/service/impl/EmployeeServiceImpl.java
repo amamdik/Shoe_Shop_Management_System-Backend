@@ -5,21 +5,30 @@ import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dao.UserDAO;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dto.EmployeeDTO;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.entity.EmployeeEntity;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.entity.UserEntity;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.exception.NotFoundException;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.requestAndResponse.secure.SignUp;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.AuthenticationService;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.EmployeeService;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.utill.UtilMatters;
+import lombok.AllArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Date;
 import java.util.List;
 import java.util.Optional;
 
+@Service
+@Transactional
+@AllArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeDAO employeeDAO;
     private final Mapping conversionData;
     private final AuthenticationService authenticationService;
     private final UserDAO userDAO;
     private final PasswordEncoder passwordEncoder;
+
 
     @Override
     public boolean saveEmployee(EmployeeDTO employeeDTO, String password) {

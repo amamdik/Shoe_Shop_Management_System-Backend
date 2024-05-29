@@ -31,7 +31,7 @@ public class InventoryServiceImpl implements InventoryService {
 
         Optional<SupplierEntity> supplier = supplierDAO.findById(supplierId);
         if (supplier.isPresent()) {
-            SupplierInventoryDetailEntity supplierInventoryDetail = new SupplierInventoryDetail();
+            SupplierInventoryDetailEntity supplierInventoryDetail = new SupplierInventoryDetailEntity();
             supplierInventoryDetail.setSupplier_inventory_detail_id(UUID.randomUUID().toString());
             supplierInventoryDetail.setInventory(isSaved);
             supplierInventoryDetail.setSupplier(supplier.get());

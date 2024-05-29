@@ -16,17 +16,18 @@ public class UserController {
 
     @GetMapping("/health")
     public String healthCheck(){
-        return "----------@DONE@----------";
+        return "----------@DONE@-----------";
     }
 
-    //sign up (only one time)
+    //singUp - Only one time
     @PostMapping("/signup")
-    public ResponseEntity<JwtAuthResponse> signUp(){
+    public ResponseEntity<JwtAuthResponse> signUp() {
         return ResponseEntity.ok(authenticationService.signUp());
     }
 
+    //signIn
     @PostMapping("/signin")
-    public ResponseEntity<JwtAuthResponse> signIn(@RequestBody SignIn signInReq){
+    public ResponseEntity<JwtAuthResponse> signIn(@RequestBody SignIn signInReq) {
         return ResponseEntity.ok(authenticationService.signIn(signInReq));
     }
 }

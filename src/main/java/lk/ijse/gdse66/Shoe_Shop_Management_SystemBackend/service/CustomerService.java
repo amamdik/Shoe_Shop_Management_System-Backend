@@ -1,6 +1,7 @@
 package lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service;
 
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dto.CustomerDTO;
+import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.exception.NotFoundException;
 
 import java.util.List;
 
