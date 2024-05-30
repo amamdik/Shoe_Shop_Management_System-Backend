@@ -10,8 +10,8 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity
 @Table(name = "employee")
+@Entity
 public class EmployeeEntity implements SuperEntity{
     @Id
     private String employeeId;

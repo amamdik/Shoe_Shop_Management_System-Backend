@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity
 @Table(name = "size")
-@IdClass(SizeEntity.class)
+@Entity
+@IdClass(SizeID.class)
 public class SizeEntity {
     @Id
     private int size;
@@ -27,4 +27,5 @@ public class SizeEntity {
     private double expected_profit;
     private String status;
     private double profit_margin;
+
 }

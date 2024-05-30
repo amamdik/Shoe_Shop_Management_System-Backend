@@ -15,7 +15,7 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "sale")
-public class SaleEntity implements SuperEntity {
+public class SaleEntity implements SuperEntity{
     @Id
     private String order_id;
     private String customer_name;

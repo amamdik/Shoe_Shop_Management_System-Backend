@@ -8,10 +8,11 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Entity
-@Table(name = "sale_inventory_details")
 @Setter
 @Getter
+
+@Entity
+@Table(name = "sale_inventory_details")
 public class SaleInventoryDetailEntity {
     @Id
     private String orderDetailID;

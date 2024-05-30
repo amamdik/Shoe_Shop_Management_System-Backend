@@ -17,7 +17,7 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "user")
-public class UserEntity implements SuperEntity, UserDetails {
+public class UserEntity implements UserDetails, SuperEntity {
     @Id
     private String userId;
     @Column(unique = true)
