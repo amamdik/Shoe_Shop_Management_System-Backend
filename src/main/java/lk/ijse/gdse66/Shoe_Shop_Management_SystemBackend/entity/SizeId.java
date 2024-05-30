@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class SizeIdEntity {
+public class SizeId {
     private int size;
     private InventoryEntity inventory;
 }

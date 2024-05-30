@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Table(name = "size")
 @Entity
-@IdClass(SizeID.class)
+@IdClass(SizeId.class)
 public class SizeEntity {
     @Id
     private int size;
