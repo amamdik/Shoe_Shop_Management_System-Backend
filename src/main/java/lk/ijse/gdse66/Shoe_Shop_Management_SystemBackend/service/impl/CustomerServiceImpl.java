@@ -1,5 +1,6 @@
 package lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.impl;
 
+import jakarta.transaction.Transactional;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dao.CustomerDAO;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.dto.CustomerDTO;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.entity.CustomerEntity;
@@ -8,7 +9,6 @@ import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.mapping.Mapping;
 import lk.ijse.gdse66.Shoe_Shop_Management_SystemBackend.service.CustomerService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;

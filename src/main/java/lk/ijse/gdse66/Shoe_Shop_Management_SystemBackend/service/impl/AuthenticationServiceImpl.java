@@ -26,7 +26,6 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 public class AuthenticationServiceImpl implements AuthenticationService {
-
     private final PasswordEncoder passwordEncoder;
     private  final UserDAO userDAO;
     private final Mapping mapping;
