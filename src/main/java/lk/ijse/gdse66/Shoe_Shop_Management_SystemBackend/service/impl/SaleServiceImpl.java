@@ -47,6 +47,8 @@ public class SaleServiceImpl implements SaleService {
             return false;
         }
 
+        System.out.println(">>>>>>>>>>>>>>>> : "+user.get().getEmployee().getEmployeeName());
+
         SaleEntity sale = new SaleEntity();
         sale.setOrder_id(UUID.randomUUID().toString());
         sale.setUser(user.get());
